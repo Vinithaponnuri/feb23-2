@@ -1,0 +1,14 @@
+PROGRAMME:
+l=[]
+x=int(input('enter x: '))
+rev=0
+l.append(x)
+while x>0:
+    rem=x%10
+    rev=rev*10+rem
+    x=x//10
+print('rev num is: ',rev)
+OUTPUT:
+enter x: 2345
+rev num is:  5432
+    
