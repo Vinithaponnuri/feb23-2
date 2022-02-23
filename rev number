@@ -1,14 +1,15 @@
 PROGRAMME:
 l=[]
-x=int(input('enter x: '))
-rev=0
-l.append(x)
-while x>0:
-    rem=x%10
-    rev=rev*10+rem
-    x=x//10
-print('rev num is: ',rev)
+n=int(input('enter n: '))
+
+for i in range(1,n):
+   x=int(input('enter x: '))
+   l.append(x)
+rev=l[::-1]
+print(rev)
 OUTPUT:
-enter x: 2345
-rev num is:  5432
-    
+enter n: 4
+enter x: 2
+enter x: 5
+enter x: 6
+[6, 5, 2]
